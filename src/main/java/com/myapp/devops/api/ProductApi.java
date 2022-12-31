@@ -20,7 +20,7 @@ import com.myapp.devops.model.Product;
 import com.myapp.devops.repository.ProductRepository;
 
 @RestController
-@RequestMapping("api/v2/products")
+@RequestMapping("api/v3/products")
 public class ProductApi {
 
 	@Autowired
