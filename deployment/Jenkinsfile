@@ -45,5 +45,22 @@ node {
         
         
     }
+    stage('SonarQube Analysis') {
+
+
+
+if(isUnix()) {
+
+sh "'${mvnHome}/bin/mvn' sonar:sonar"
+
+}
+
+else {
+
+bat(/"${mvnHome}\bin\mvn" sonar:sonar /)
+
+}
+
+}
     
 }
