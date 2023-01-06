@@ -61,6 +61,5 @@ if(isUnix()) {
    bat("docker-compose up -d")
 }
 
-}
 }   
 }
